@@ -1,0 +1,14 @@
+.marco_cotiza{
+  position: fixed;
+  width: 34%;
+  border-color: #203bfa;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 25px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  right: 5%;
+  top: 24%;
+}
