@@ -1,8 +1,11 @@
+article{
+  text-align: justify;
+}
 .marco_cotiza
 {
   position: fixed;
   width: 33%;
-  border-color: #203bfa;
+  border-color: #264387;
   border-width: thin;
   border-style: solid;
   border-radius: 25px;
@@ -10,16 +13,73 @@
   padding-right: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
-  right: 5%;
-  top: 24%;
+  right: 0%;
+  top: 15%;
   background-color: #fff;
 }
-.renglon_imagen
+.renglon_imagen {
+	height: 250px;
+	background-color: #ff4da6;
+	background: -webkit-linear-gradient(right, #eb7bcc , #f5bee5 , #faddf2, #fefcfe);
+	background: -o-linear-gradient(left, #eb7bcc , #f5bee5 , #faddf2, #fefcfe);
+	background: -moz-linear-gradient(left, #eb7bcc , #f5bee5 , #faddf2, #fefcfe);
+	background: linear-gradient(to left, #eb7bcc , #f5bee5 , #faddf2, #fefcfe);
+}
+.fondo_rojo
 {
-  height: 250px;
-  background-color: #ff4da6;
-  background: -webkit-linear-gradient(right, #ff4da6 , #ffe6f2); /* For Safari 5.1 to 6.0 */
- background: -o-linear-gradient(left, #ff4da6, #ffe6f2); /* For Opera 11.1 to 12.0 */
- background: -moz-linear-gradient(left, #ff4da6, #ffe6f2); /* For Firefox 3.6 to 15 */
- background: linear-gradient(to left, #ff4da6 , #ffe6f2); /* Standard syntax */
+  background-color: #e3003e;
+  color: white;
+  font-weight: bolder;
+  font-size: 2em;
+}
+.fondo_rojo p{
+  margin: 0.1em;
+}
+.titulos_index{
+  color: #264387;
+  font-weight: 600;
+  font-size: 2em;
+}
+.hr_roja {
+	width: 90%;
+	background-color: #e3003e;
+	border: solid 0.2em #e3003e;
+}
+.iconos-index{
+  margin-top:14%;
+  margin-left: 30%;
+}
+.pie-rojo {
+	font-size: 2em;
+	color: rgb(227, 0, 62);
+	font-weight: bold;
+}
+.pie-rojo p{
+  padding-top: 0.7em;
+}
+.pie-rojo span{
+  font-size: 3em;
+}
+.dt-no-bold{
+  font-weight: normal;
+}
+.fondo_blanco{
+  background-color: #fff;
+  border-radius: 12px;
+}
+.fondo_azul{
+  background-color: #264387;
+}
+#cuadro_inferior_1, #cuadro_inferior_2 {
+  border-right: 5px solid #fff;
+  font-size: 7.6em;
+  text-align: center;
+  margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+#cuadro_inferior_3{
+  vertical-align: middle;
+  text-align: justify;
+  margin-top: 1.2em;
+	margin-bottom: 1.2em;
 }
