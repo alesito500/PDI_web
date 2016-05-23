@@ -13,8 +13,8 @@ article{
   padding-right: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
-  right: 0%;
-  top: 15%;
+  right: 1%;
+  top: 20%;
   background-color: #fff;
 }
 .renglon_imagen {
@@ -82,4 +82,32 @@ article{
   text-align: justify;
   margin-top: 1.2em;
 	margin-bottom: 1.2em;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+
+  border-left: 60px solid green;
+}
+#telefono_01800{
+  font-weight: 600;
+  color: #000;
+  font-size: 2em;
+}
+#telefono_azul_sm {
+	font-size: 1.7em;
+	margin-left: -1.5em;
+	font-weight: 600;
+}
+#telefono_azul_md {
+	font-size: 1.9em;
+  margin-left: -1.5em;
+	font-weight: 600;
+}
+#telefono_azul_lg {
+	font-size: 2.3em;
+	margin-left: -1.5em;
+	font-weight: 600;
 }
