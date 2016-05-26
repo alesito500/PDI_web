@@ -14,8 +14,19 @@ article{
   padding-top: 1em;
   padding-bottom: 1em;
   right: 1%;
-  top: 20%;
+  top: 25%;
   background-color: #fff;
+}
+.marco_cotiza button{
+  background-color: #e3003e;
+  color: #fff;
+  font-weight: bolder;
+  border-style: none;
+  font-size: x-large;
+  border-radius: 15px;
+}
+.marco_cotiza button:hover{
+  border: solid 2px #EB7ECD;
 }
 .renglon_imagen {
 	height: 250px;
@@ -93,21 +104,24 @@ article{
 }
 #telefono_01800{
   font-weight: 600;
-  color: #000;
+  color: #264387;
   font-size: 2em;
 }
 #telefono_azul_sm {
 	font-size: 1.7em;
 	margin-left: -1.5em;
 	font-weight: 600;
+  color: #264387;
 }
 #telefono_azul_md {
 	font-size: 1.9em;
   margin-left: -1.5em;
 	font-weight: 600;
+  color: #264387;
 }
-#telefono_azul_lg {
+#telefono_azul_lg{
 	font-size: 2.3em;
 	margin-left: -1.5em;
 	font-weight: 600;
+  color:#264387;
 }

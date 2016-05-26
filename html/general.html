@@ -16,13 +16,15 @@
   <title>¿Qué necesito?</title>
 </head>
 <body>
-  <!-- Men&uacute; de navegaci&oacute;n -->
+
   <div class="container-fluid">
+    <!-- Banner superior -->
     <div class="row" id="banner-superior" >
       <div class="col-xs-8 col-sm-3 col-md-4"><img src="images/Logo-Autodinero.png" class="img-responsive" alt="Autodinero"></div>
       <div class="col-xs-4 col-sm-5 col-md-4" id="telefono_01800">01800-0000000</div>
       <div class="hidden-xs col-sm-4 col-md-4">Cuadros azules</div>
     </div>
+    <!-- Men&uacute; de navegaci&oacute;n -->
     <div class="row" id="menu-navegacion">
       <div class="col-xs-12">
         <ul class="nav nav-pills nav-justified">
@@ -35,8 +37,85 @@
         </ul>
       </div>
     </div>
+    <!-- Men&uacute; de navegaci&oacute;n -->
+    <!-- Banner principal -->
+    <div class="renglon_imagen">
+      <p>¿Te falta algo? Te ayudamos a solucionarlo</p>
+    </div>
+    <br>
+    <div class="container" id="Marco_informacion">
+      <div class="row">
+        <div class="col-sm-8">
+          <p>
+            Los requisitos para obtener dinero y seguir manejando tu auto son muy sencillos:
+            <dl>
+              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Factura del auto</dt>
+              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Tarjeta de circulaci&oacute;n</dt>
+              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Identificaci&oacute;n oficial</dt>
+              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Licencia de conducir vigente</dt>
+              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Llenar solicitud de cr&eacute;dito</dt>
+              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Llevar tu auto para una valuaci&oacute;n</dt>
+            </dl>
+          </p>
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="col-sm-9">
+                Obtendr&aacute;s grandes beneficios, con&oacute;celos
+              </div>
+              <div class="col-sm-3">
+                <button type="button" id="boton-beneficios" >Beneficios</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pie de p&aacute;gina azul -->
+      <div class="row fondo_azul">
+        <div class="col-xs-4" id="cuadro_inferior_1">
+          <div class="fondo_blanco">X</div>
+        </div>
+        <div class="col-xs-4" id="cuadro_inferior_2">
+           <div class="fondo_blanco">X</div>
+        </div>
+        <div class="col-xs-4" id="cuadro_inferior_3">
+          <div class="fondo_blanco">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+      </div>
+    <!-- Pie de p&aacute;gina azul -->
   </div>
-  <!-- Men&uacute; de navegaci&oacute;n -->
-
+  <!-- Container-fluid principal -->
+  <!-- Marco para cotizar -->
+  <div class="marco_cotiza" id="forma_cotizador">
+    <form id="cotizador">
+      <div class="row">
+        <div class="col-sm-12">
+          <input type="text" id="nombre-cotizador" placeholder="Nombre:" class="form-control" autofocus="true" tabindex="1" required="true"></intput>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <input type="email" id="mail-cotizador" class="form-control" placeholder="Correo:" tabindex="2" required="true">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <input type="tel" id="tel-cotizador" class="form-control" placeholder="Tel&eacute;fono:" tabindex="3" required="true" maxlength="10">
+        </div>
+        <div class="col-sm-6">
+          <input type="text" id="auto-cotizador" placeholder="Veh&iacute;culo" tabindex="4" required="true" class="form-control">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-6">
+          <button type="button" id="boton-cotizador" tabindex="5" >Cotiza</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- Marco para cotizar -->
 </body>
 </html>
