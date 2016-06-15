@@ -9,11 +9,12 @@
 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/MenuFlechas.css">
   <link rel="icon" href="images/Llanta-Autodinero.ico">
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <title>¿Qué necesito?</title>
+  <title>Preguntas frecuentes</title>
 </head>
 <body>
 
@@ -27,13 +28,13 @@
     <!-- Men&uacute; de navegaci&oacute;n -->
     <div class="row" id="menu-navegacion">
       <div class="col-xs-12">
-        <ul class="nav nav-pills nav-justified">
-          <li role="presentation"><a href="index.html">INICIO</a></li>
-          <li role="presentation"><a href="general.html">QUÉ NECESITO</a></li>
-          <li role="presentation"><a href="queobtengo.html">QUÉ OBTENGO</a></li>
-          <li role="presentation"><a href="cuanto.html">CUÁNTO PRESTAN</a></li>
-          <li role="presentation"><a href="sucursales.html">A DÓNDE ACUDO</a></li>
-          <li role="presentation" class="active"><a href="#Marco_informacion">TENGO DUDAS</a></li>
+        <ul class="Menu-Flecha">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="general.html">QUÉ NECESITO</a></li>
+          <li><a href="queobtengo.html">QUÉ OBTENGO</a></li>
+          <li><a href="cuanto.html">CUÁNTO PRESTAN</a></li>
+          <li><a href="sucursales.html">A DÓNDE ACUDO</a></li>
+          <li class="active"><a href="#Marco_informacion">TENGO DUDAS</a></li>
         </ul>
       </div>
     </div>
@@ -46,29 +47,59 @@
     <div class="container" id="Marco_informacion">
       <div class="row">
         <div class="col-sm-8">
-          <p>
-            Los requisitos para obtener dinero y seguir manejando tu auto son muy sencillos:
-            <dl>
-              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Factura del auto</dt>
-              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Tarjeta de circulaci&oacute;n</dt>
-              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Identificaci&oacute;n oficial</dt>
-              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Licencia de conducir vigente</dt>
-              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Llenar solicitud de cr&eacute;dito</dt>
-              <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Llevar tu auto para una valuaci&oacute;n</dt>
+          <article>
+            <dl class="dl_faq">
+              <dt>Pregunta frecuente #1 <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
+              <dd>Respuesta número 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+              <dt>Pregunta frecuente #2<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
+              <dd>Respuesta número 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+              <dt>Pregunta frecuente #3<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
+              <dd>Respuesta número 3</dd>
+              <dt>Pregunta frecuente #4<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
+              <dd>Respuesta número 4</dd>
+              <dt>Pregunta frecuente #5<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
+              <dd>Respuesta número 5</dd>
             </dl>
-          </p>
-          <div class="row">
-            <div class="col-sm-8">
-              <div class="col-sm-9">
-                Obtendr&aacute;s grandes beneficios, con&oacute;celos
-              </div>
-              <div class="col-sm-3">
-                <button type="button" id="boton-beneficios" >Beneficios</button>
-              </div>
+          </article>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-8 text-center">
+          <h2 style="font-family:Exo-Bold;">Tienes más preguntas</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="col-sm-4">
+            <div class="opciones_faq">
+              <h3>Llámanos</h3>
+              <br>
+              <h3>01800-0000000</h3>
             </div>
+
+          </div>
+          <div class="col-sm-4">
+            <div class="opciones_faq">
+              <h3>Chatea en vivo</h3>
+              <a href="#">
+                <img src="images/chat_sm.png" class="img-responsive" alt="Chatea con nosotros">
+              </a>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            <div class="opciones_faq">
+              <h3>Escríbenos</h3>
+              <a href="#">
+                <img src="images/email_sm.png" class="img-responsive" alt="Escribenos">
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
+      <br>
     </div>
     <!-- Pie de p&aacute;gina azul -->
       <div class="row fondo_azul">

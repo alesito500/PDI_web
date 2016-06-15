@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'Akzidenz-Grotesk BQ';
+  src: url('../fonts/AkzidenzGrotesk-Regular.otf') format ('opentype');
+
+  font-family: 'Exo Bold';
+  src: url('../fonts/Exo-Bold.otf')  format ('opentype');
+}
+
 article{
   text-align: justify;
+  font-family: 'Akzidenz-Grotesk BQ';
 }
 .marco_cotiza
 {
@@ -44,9 +53,10 @@ article{
   font-size: 2em;
 }
 .fondo_rojo p{
-  margin: 0.1em;
+  margin: 0;
 }
 .titulos_index{
+  font-family: 'Exo Bold';
   color: #264387;
   font-weight: 600;
   font-size: 2em;
@@ -66,6 +76,7 @@ article{
 	font-weight: bold;
 }
 .pie-rojo p{
+  font-family: 'Exo Bold';
   padding-top: 0.7em;
 }
 .pie-rojo span{
@@ -124,4 +135,29 @@ article{
 	margin-left: -1.5em;
 	font-weight: 600;
   color:#264387;
+}
+.dl_faq{
+  display: block;
+  background-color: #165dd2;
+}
+.dl_faq dt{
+  background-color: #dae1f3;
+  font-family: 'Exo Bold';
+}
+.dl_faq dd{
+  color: #fff;
+}
+.opciones_faq {
+	background-color: #d0cece;
+	text-align: center;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+  line-height: 0.9em;
+  border-radius: 4px;
+}
+.opciones_faq img{
+  padding-left: 30%;
+}
+.opciones_faq h3{
+  font-family: 'Exo Bold';
 }
