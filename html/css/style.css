@@ -25,6 +25,7 @@ article{
   right: 1%;
   top: 25%;
   background-color: #fff;
+  z-index: 10;
 }
 .marco_cotiza button{
   background-color: #e3003e;
@@ -38,7 +39,7 @@ article{
   border: solid 2px #EB7ECD;
 }
 .renglon_imagen {
-	height: 250px;
+  max-height: 400px;
 	background-color: #ff4da6;
 	background: -webkit-linear-gradient(right, #eb7bcc , #f5bee5 , #faddf2, #fefcfe);
 	background: -o-linear-gradient(left, #eb7bcc , #f5bee5 , #faddf2, #fefcfe);
