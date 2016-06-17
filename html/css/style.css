@@ -11,9 +11,10 @@
     font-weight: normal;
     font-style: normal;
 }
-
-article{
-  text-align: justify;
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Exo Bold';
+}
+body{
   font-family: 'Akzidenz-Grotesk BQ';
 }
 .marco_cotiza
@@ -65,7 +66,7 @@ article{
 .titulos_index{
   font-family: 'Exo Bold';
   color: #264387;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2em;
 }
 .hr_roja {
@@ -126,19 +127,19 @@ article{
   font-size: 2em;
 }
 #telefono_azul_sm {
-	font-size: 1.7em;
+	font-size: 1em;
 	margin-left: -1.5em;
 	font-weight: 600;
   color: #264387;
 }
 #telefono_azul_md {
-	font-size: 1.9em;
+	font-size: 1.2em;
   margin-left: -1.5em;
 	font-weight: 600;
   color: #264387;
 }
 #telefono_azul_lg{
-	font-size: 2.3em;
+	font-size: 1.3em;
 	margin-left: -1.5em;
 	font-weight: 600;
   color:#264387;
@@ -164,7 +165,4 @@ article{
 }
 .opciones_faq img{
   padding-left: 30%;
-}
-.opciones_faq h3{
-  font-family: 'Exo Bold';
 }

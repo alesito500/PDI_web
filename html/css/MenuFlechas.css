@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'Akzidenz-Grotesk BQ';
+	src: url('../fonts/akzidenzgrotesk-regular-webfont.woff2') format('woff2'),
+         url('../fonts/akzidenzgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+  font-family: 'Exo Bold';
+    src: url('../fonts/exo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/exo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 ul.Menu-Flecha {
-    margin: 20px 60px;
+    margin: 10px 0px;
+    width: 100%
 }
 
 ul.Menu-Flecha li {
@@ -57,6 +72,8 @@ ul.Menu-Flecha li a {
     color: #fff;
     font-size: 1em;
     font-weight: bolder;
+    padding: 0% 8%;
+    font-family: 'Exo Bold'
 }
 
 ul.Menu-Flecha li a:hover {
