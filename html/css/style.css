@@ -1,9 +1,15 @@
 @font-face {
   font-family: 'Akzidenz-Grotesk BQ';
-  src: url('../fonts/AkzidenzGrotesk-Regular.otf') format ('opentype');
+	src: url('../fonts/akzidenzgrotesk-regular-webfont.woff2') format('woff2'),
+         url('../fonts/akzidenzgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
   font-family: 'Exo Bold';
-  src: url('../fonts/Exo-Bold.otf')  format ('opentype');
+    src: url('../fonts/exo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/exo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 article{
