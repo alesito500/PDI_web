@@ -12,10 +12,10 @@
     font-style: normal;
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Exo Bold';
+  font-family: 'Exo Bold', sans-serif;
 }
 body{
-  font-family: 'Akzidenz-Grotesk BQ';
+  font-family: 'Akzidenz-Grotesk BQ', serif;
 }
 .marco_cotiza
 {
@@ -33,6 +33,7 @@ body{
   top: 25%;
   background-color: #fff;
   z-index: 10;
+  font-family: 'Akzidenz-Grotesk BQ', serif;
 }
 .marco_cotiza button{
   background-color: #e3003e;
@@ -47,6 +48,7 @@ body{
 }
 .renglon_imagen {
   max-height: 400px;
+  max-width: 1400px;
 	background-color: #ff4da6;
 	background: -webkit-linear-gradient(right, #eb7bcc , #f5bee5 , #faddf2, #fefcfe);
 	background: -o-linear-gradient(left, #eb7bcc , #f5bee5 , #faddf2, #fefcfe);
@@ -64,7 +66,7 @@ body{
   margin: 0;
 }
 .titulos_index{
-  font-family: 'Exo Bold';
+  font-family: 'Exo Bold', sans-serif;
   color: #264387;
   font-weight: 400;
   font-size: 2em;
@@ -84,14 +86,23 @@ body{
 	font-weight: bold;
 }
 .pie-rojo p{
-  font-family: 'Exo Bold';
+  font-family: 'Exo Bold', sans-serif;
   padding-top: 0.7em;
 }
 .pie-rojo span{
   font-size: 3em;
 }
+.pie-rojo a{
+  color:rgb(227, 0, 62);
+}
+.pie-rojo a:hover{
+  color: #e72c49;
+}
 .dt-no-bold{
   font-weight: normal;
+}
+.dt-no-bold span{
+  padding-right: 0.9em;
 }
 .fondo_blanco{
   background-color: #fff;
@@ -150,7 +161,7 @@ body{
 }
 .dl_faq dt{
   background-color: #dae1f3;
-  font-family: 'Exo Bold';
+  font-family: 'Exo Bold', sans-serif;
 }
 .dl_faq dd{
   color: #fff;
@@ -165,4 +176,16 @@ body{
 }
 .opciones_faq img{
   padding-left: 30%;
+}
+.boton-ama{
+  font-family: 'Akzidenz-Grotesk BQ', serif;
+  font-size: 1.2em;
+  background-color: #ea5b0c;
+    color: #ffffff;
+    border-style: solid;
+    border-color: #264387;
+    border-width: 1.3px;
+    border-radius: 5px;
+    margin: 0em 0.6em 0.7em;
+    padding: 6px 12px;
 }
