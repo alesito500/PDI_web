@@ -17,6 +17,17 @@ h1, h2, h3, h4, h5, h6{
 body{
   font-family: 'Akzidenz-Grotesk BQ', serif;
 }
+legend{
+  color: rgb(32, 59, 250);
+}
+#banner-superior
+{
+  max-height: 70px;
+}
+#banner-superior img
+{
+  max-height: 56px;
+}
 .marco_cotiza
 {
   position: fixed;
@@ -139,21 +150,32 @@ body{
 }
 #telefono_azul_sm {
 	font-size: 1em;
-	margin-left: -1.5em;
 	font-weight: 600;
   color: #264387;
+  position: absolute;
+  top: 1em;
+  left: 4.5em;
 }
 #telefono_azul_md {
 	font-size: 1.2em;
-  margin-left: -1.5em;
 	font-weight: 600;
   color: #264387;
+  position: absolute;
+  top: 0.7em;
+  left: 3.8em;
 }
 #telefono_azul_lg{
 	font-size: 1.3em;
-	margin-left: -1.5em;
 	font-weight: 600;
   color:#264387;
+  position: absolute;
+  top: 0.8em;
+  left: 3.5em;
+}
+#ico-email{
+  position: absolute;
+  top: 0;
+  left: 5.5em;
 }
 .dl_faq{
   display: block;
