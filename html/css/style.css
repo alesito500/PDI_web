@@ -177,6 +177,11 @@ legend{
   top: 0;
   left: 5.5em;
 }
+#ico-chat{
+  position: absolute;
+  top: 0;
+  left: 9.8em;
+}
 .dl_faq{
   display: block;
   background-color: #165dd2;
@@ -198,6 +203,7 @@ legend{
 }
 .opciones_faq img{
   padding-left: 30%;
+  max-height: 73px;
 }
 .boton-ama{
   font-family: 'Akzidenz-Grotesk BQ', serif;

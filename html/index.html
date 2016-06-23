@@ -16,12 +16,12 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+
   <title>AutoDinero</title>
 </head>
 <body>
   <!-- Men&uacute; de navegaci&oacute;n -->
-  <div class="container-fluid">
-    <div class="container">
+  <div class="container">
       <div class="row" id="banner-superior" >
         <div class="col-xs-8 col-sm-3 col-md-2 col-md-offset-1">
           <img src="images/Logo-Autodinero.png" class="img-responsive" alt="Autodinero">
@@ -47,36 +47,40 @@
               <a href="mailto:contacto@autodinero.com.mx?subject=Cotizaci&oacute;n">
                 <img src="images/correo.png" alt="Correo" class="img-responsive" id="ico-email">
               </a>
+              <img src="images/chat.png" alt="Chat" class="img-responsive" id="ico-chat">
             </div>
           </div>
         </div>
       </div>
       <div class="row" id="menu-navegacion">
-        <div class="col-sm-12 col-md-offset-1 col-md-10">
+        <div class="col-sm-12">
           <ul class="Menu-Flecha">
-            <li class="active"><a href="#Bienvenido">Inicio</a></li>
-            <li ><a href="general.html">Qué necesito</a></li>
-            <li ><a href="queobtengo.html">Qué obtengo</a></li>
-            <li ><a href="cuanto.html">Cuánto prestan</a></li>
-            <li ><a href="sucursales.html">Dónde acudo</a></li>
-            <li ><a href="faq.html">Tengo dudas</a></li>
+            <li class="active">
+              <a href="#Bienvenido">
+                  Inicio
+              </a>
+            </li>
+            <li ><a href="general.html" onmouseover="this.innerHTML='Requisitos'" onmouseout="this.innerHTML='Qué necesito'">Qué necesito</a></li>
+            <li ><a href="queobtengo.html" onmouseover="this.innerHTML='Beneficios'" onmouseout="this.innerHTML='Qué obtengo'">Qué obtengo</a></li>
+            <li ><a href="cuanto.html" onmouseover="this.innerHTML='Cotiza'" onmouseout="this.innerHTML='Cuánto prestan'">Cuánto prestan</a></li>
+            <li ><a href="sucursales.html" onmouseover="this.innerHTML='Sucursales'" onmouseout="this.innerHTML='Dónde acudo'">Dónde acudo</a></li>
+            <li ><a href="faq.html" onmouseover="this.innerHTML='Preguntas frecuentes'" onmouseout="this.innerHTML='Tengo dudas'">Tengo dudas</a></li>
           </ul>
+
         </div>
       </div>
     </div>
-  </div>
+
   <!-- Men&uacute; de navegaci&oacute;n -->
   <br>
   <!-- Banner principal -->
-  <div class="container-fluid">
-    <div class="container">
+  <div class="container">
       <div class="renglon_imagen">
       <img src="images/INDEX.jpg" alt="Bienvenido a Autodinero" class="img-responsive">
     </div>
-      <div class="fondo_rojo">
-        <div class="text-center">
-          <p>En 1 hora autorizamos tu dinero</p>
-        </div>
+    <div class="fondo_rojo">
+      <div class="text-center">
+        <p>En 1 hora autorizamos tu dinero</p>
       </div>
     </div>
   </div>
@@ -187,7 +191,7 @@
     <form id="cotizador">
       <div class="row">
         <div class="col-sm-12">
-          <input type="text" id="nombre-cotizador" placeholder="Nombre:" class="form-control" autofocus="true" tabindex="1" required="true"></intput>
+          <input type="text" id="nombre-cotizador" placeholder="Nombre:" class="form-control" autofocus="true" tabindex="1" required="true"></input>
         </div>
       </div>
       <br>
