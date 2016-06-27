@@ -14,6 +14,22 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#menufaq li a').click(function(event){
+			var elem = $(this).next();
+			if(elem.is('ul')){
+				event.preventDefault();
+				$('#menufaq ul:visible').not(elem).slideUp();
+				elem.slideToggle();
+			}
+		});
+	});
+	</script>
+	<style type="text/css" media="screen">
+
+	</style>
   <title>Preguntas frecuentes</title>
 </head>
 <body>
@@ -73,24 +89,37 @@
       <br>
     </div>
     <div class="container" id="Marco_informacion">
-      <div class="row">
-        <div class="col-sm-8">
-          <article>
-            <dl class="dl_faq">
-              <dt>Pregunta frecuente #1 <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
-              <dd>Respuesta número 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-              <dt>Pregunta frecuente #2<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
-              <dd>Respuesta número 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-              <dt>Pregunta frecuente #3<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
-              <dd>Respuesta número 3</dd>
-              <dt>Pregunta frecuente #4<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
-              <dd>Respuesta número 4</dd>
-              <dt>Pregunta frecuente #5<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></dt>
-              <dd>Respuesta número 5</dd>
-            </dl>
-          </article>
+
+
+		<div class="row">
+        	<div class="col-sm-8">
+          		<article>
+            		<dl class="dl_faq">
+						<ul id="menufaq" class="ulfaq">
+							<li><a href="#">Pregunta frecuente #1 <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+								<ul>
+									<li>Respuesta número 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            		</li>
+								</ul>
+							</li>
+                            <li><a href="#">Pregunta frecuente #2 <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+								<ul>
+									<li>Respuesta número 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            		</li>
+								</ul>
+							</li>
+                            <li><a href="#">Pregunta frecuente #3 <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+								<ul>
+									<li>Respuesta número 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            		</li>
+								</ul>
+							</li>
+						</ul>
+            	</dl>
+          	</article>
         </div>
       </div>
+
       <br>
       <div class="row">
         <div class="col-xs-8 text-center">
@@ -130,18 +159,64 @@
       <br>
     </div>
     <!-- Pie de p&aacute;gina azul -->
-      <div class="row fondo_azul">
-        <div class="col-xs-4" id="cuadro_inferior_1">
-          <div class="fondo_blanco">X</div>
+    <div class="row fondo_azul">
+      <div class="col-xs-3 cuadro_pie_p" id="cuadro_inferior_1">
+        <div class="fondo_blanco">
+          <h3>Obtener préstamo</h3>
+          <ul>
+            <li><a href="cuanto.html">Cotiza</a></li>
+            <li><a href="general.html">Requisitos</a></li>
+            <li><a href="queobtengo.html">Beneficios</a></li>
+            <li><a href="faq.html">Preguntas frecuentes</a></li>
+          </ul>
         </div>
-        <div class="col-xs-4" id="cuadro_inferior_2">
-           <div class="fondo_blanco">X</div>
-        </div>
-        <div class="col-xs-4" id="cuadro_inferior_3">
-          <div class="fondo_blanco">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-          </div>
       </div>
-    <!-- Pie de p&aacute;gina azul -->
+      <div class="col-xs-3 cuadro_pie_p" id="cuadro_inferior_2">
+        <div class="fondo_blanco">
+          <h3>
+            Sobre la mesa
+          </h3>
+          <ul>
+            <li><a href="index.html">AutoDinero</a></li>
+            <li><a href="http://www.prestadinero.com/">PrestaDinero</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="">Aviso de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-3 cuadro_pie_p" id="cuadro_inferior_3">
+        <div class="fondo_blanco">
+          <h3>
+            Productos
+          </h3>
+          <ul>
+            <li><a href="">Préstamos sobre autos</a></li>
+            <li><a href="">Préstamos sobre factura</a></li>
+            <li><a href="">Empeños</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-3 cuadro_pie_p" id="cuadro_inferior_4">
+        <div class="fondo_blanco">
+          <h3>
+            Contacto
+          </h3>
+          <ul>
+            <li>(55) 6845-0000</li>
+            <li><a href="">Chatea con nosotros</a></li>
+            <li><a href="mailto:contacto@autodinero.com.mx">Envía un correo</a></li>
+            <li><a href="cuanto.html">Solicita que te llamen</a></li>
+          </ul>
+          <a href="https://www.facebook.com/autodinero/"><img src="images/facebook.png" alt="Síguenos en facebook" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <footer>
+        Derechos reservados 2016
+      </footer>
+    </div>
+      <!-- Pie de p&aacute;gina azul -->
   </div>
   <!-- Container-fluid principal -->
   <!-- Marco para cotizar -->
@@ -149,7 +224,7 @@
     <form id="cotizador">
       <div class="row">
         <div class="col-sm-12">
-          <input type="text" id="nombre-cotizador" placeholder="Nombre:" class="form-control" autofocus="true" tabindex="1" required="true"></intput>
+          <input type="text" id="nombre-cotizador" placeholder="Nombre:" class="form-control" autofocus tabindex="1" required="true"/>
         </div>
       </div>
       <br>

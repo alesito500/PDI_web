@@ -26,7 +26,7 @@ legend{
 }
 #banner-superior img
 {
-  max-height: 56px;
+  max-height: 50px;
 }
 .marco_cotiza
 {
@@ -118,22 +118,26 @@ legend{
 .fondo_blanco{
   background-color: #fff;
   border-radius: 12px;
+  padding: 4px;
+  min-height: 186px;
 }
 .fondo_azul{
   background-color: #264387;
 }
-#cuadro_inferior_1, #cuadro_inferior_2 {
-  border-right: 5px solid #fff;
-  font-size: 7.6em;
-  text-align: center;
-  margin-top: 0.2em;
-	margin-bottom: 0.2em;
-}
-#cuadro_inferior_3{
+.cuadro_pie_p{
   vertical-align: middle;
   text-align: justify;
   margin-top: 1.2em;
 	margin-bottom: 1.2em;
+  font-size: 0.8em;
+}
+.cuadro_pie_p h3{
+  font-size: 1.5em;
+}
+.cuadro_pie_p img{
+  max-height: 35px;
+  position: relative;
+  left: 35%;
 }
 .arrow-right {
   width: 0;
@@ -182,6 +186,52 @@ legend{
   top: 0;
   left: 9.8em;
 }
+.ulfaq{
+  display:block;
+  background-color:#264387;
+  margin:0;
+  padding:0;
+  width:auto;
+  list-style:none;
+}
+#menufaq{
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:1px 1px 3px #888;
+  -moz-box-shadow:1px 1px 3px #888;
+}
+#menufaq li{
+  border-bottom:1px solid #FFF;
+}
+#menufaq ul li, #menufaq li:last-child {
+	border: none;
+	line-height: 1.6em;
+	text-align: justify;
+}
+
+#menufaq a:hover{
+  color:#F9B855;
+  -webkit-transition: color 0.2s linear;
+}
+#menufaq > li > a {
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 600;
+	padding-left: 0.3em;
+}
+#menufaq ul a:hover{
+  background-color:#FFF;
+  color:#2961A9;
+  text-shadow:none;
+  -webkit-transition: color, background-color 0.2s linear;
+}
+#menufaq ul{
+  background-color:#fff;
+  color:#0F1A36;
+}
+#menufaq li ul {display:none;}
+
 .dl_faq{
   display: block;
   background-color: #165dd2;
@@ -216,4 +266,7 @@ legend{
     border-radius: 5px;
     margin: 0em 0.6em 0.7em;
     padding: 6px 12px;
+}
+footer{
+  text-align: center;
 }

@@ -156,11 +156,11 @@
               <div class="row pie-rojo">
                 <div class="col-sm-9 text-center">
                   <p>
-                    <a href="#nombre-cotizador">Calcula el monto ya</a>
+                    <a href="#" onclick="focus_cotizar()">Calcula el monto ya</a>
                   </p>
                 </div>
                 <div class="col-sm-3">
-                  <a href="#nombre-cotizador"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+                  <a href="#" onclick="focus_cotizar()"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
                 </div>
               </div>
             </li>
@@ -173,15 +173,61 @@
   <!-- Pie de p&aacute;gina azul -->
   <div class="container-fluid">
     <div class="row fondo_azul">
-      <div class="col-xs-4" id="cuadro_inferior_1">
-        <div class="fondo_blanco">X</div>
+      <div class="col-xs-3 cuadro_pie_p" id="cuadro_inferior_1">
+        <div class="fondo_blanco">
+          <h3>Obtener préstamo</h3>
+          <ul>
+            <li><a href="cuanto.html">Cotiza</a></li>
+            <li><a href="general.html">Requisitos</a></li>
+            <li><a href="queobtengo.html">Beneficios</a></li>
+            <li><a href="faq.html">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-xs-4" id="cuadro_inferior_2">
-        <div class="fondo_blanco">X</div>
+      <div class="col-xs-3 cuadro_pie_p" id="cuadro_inferior_2">
+        <div class="fondo_blanco">
+          <h3>
+            Sobre la mesa
+          </h3>
+          <ul>
+            <li><a href="index.html">AutoDinero</a></li>
+            <li><a href="http://www.prestadinero.com/">PrestaDinero</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="">Aviso de privacidad</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-xs-4" id="cuadro_inferior_3">
-        <div class="fondo_blanco">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div class="col-xs-3 cuadro_pie_p" id="cuadro_inferior_3">
+        <div class="fondo_blanco">
+          <h3>
+            Productos
+          </h3>
+          <ul>
+            <li><a href="">Préstamos sobre autos</a></li>
+            <li><a href="">Préstamos sobre factura</a></li>
+            <li><a href="">Empeños</a></li>
+          </ul>
+        </div>
       </div>
+      <div class="col-xs-3 cuadro_pie_p" id="cuadro_inferior_4">
+        <div class="fondo_blanco">
+          <h3>
+            Contacto
+          </h3>
+          <ul>
+            <li>(55) 6845-0000</li>
+            <li><a href="">Chatea con nosotros</a></li>
+            <li><a href="mailto:contacto@autodinero.com.mx">Envía un correo</a></li>
+            <li><a href="cuanto.html">Solicita que te llamen</a></li>
+          </ul>
+          <a href="https://www.facebook.com/autodinero/"><img src="images/facebook.png" alt="Síguenos en facebook" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <footer>
+        Derechos reservados 2016
+      </footer>
     </div>
   </div>
   <!-- Pie de p&aacute;gina azul -->
@@ -218,5 +264,10 @@
     </form>
   </div>
   <!-- Marco para cotizar -->
+  <script>
+  function focus_cotizar(){
+    document.getElementById("nombre-cotizador").focus();
+  }
+  </script>
 </body>
 </html>
