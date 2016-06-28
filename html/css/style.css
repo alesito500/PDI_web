@@ -209,6 +209,9 @@ legend{
 	line-height: 1.6em;
 	text-align: justify;
 }
+#menufaq ul li{
+  padding: 0.8em;
+}
 
 #menufaq a:hover{
   color:#F9B855;
@@ -232,17 +235,6 @@ legend{
 }
 #menufaq li ul {display:none;}
 
-.dl_faq{
-  display: block;
-  background-color: #165dd2;
-}
-.dl_faq dt{
-  background-color: #dae1f3;
-  font-family: 'Exo Bold', sans-serif;
-}
-.dl_faq dd{
-  color: #fff;
-}
 .opciones_faq {
 	background-color: #d0cece;
 	text-align: center;
@@ -269,4 +261,7 @@ legend{
 }
 footer{
   text-align: center;
+}
+.dl-list dt{
+  list-style-type: circle;
 }
