@@ -20,9 +20,16 @@ body{
 legend{
   color: rgb(32, 59, 250);
 }
-#banner-superior
-{
-  max-height: 70px;
+article{
+  text-align: justify;
+  padding: 0.2em 1em;
+  font-size: 1.1em;
+}
+label{
+  font-size: 1.1em;
+}
+#banner-superior {
+	padding: 0.6em 0em;
 }
 #banner-superior img
 {
@@ -40,8 +47,8 @@ legend{
   padding-right: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
-  right: 1%;
-  top: 25%;
+  right: 4%;
+  top: 30%;
   background-color: #fff;
   z-index: 10;
   font-family: 'Akzidenz-Grotesk BQ', serif;
@@ -129,10 +136,11 @@ legend{
   text-align: justify;
   margin-top: 1.2em;
 	margin-bottom: 1.2em;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 .cuadro_pie_p h3{
   font-size: 1.5em;
+  padding: 0 0.6em;
 }
 .cuadro_pie_p img{
   max-height: 35px;
@@ -219,7 +227,7 @@ legend{
 }
 #menufaq > li > a {
 	color: #fff;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 600;
 	padding-left: 0.3em;
 }
@@ -250,14 +258,15 @@ legend{
 .boton-ama{
   font-family: 'Akzidenz-Grotesk BQ', serif;
   font-size: 1.2em;
-  background-color: #ea5b0c;
+  background-color: #e3003e;
     color: #ffffff;
-    border-style: solid;
+    border-style: none;
     border-color: #264387;
     border-width: 1.3px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 0em 0.6em 0.7em;
     padding: 6px 12px;
+    font-weight: 900;
 }
 footer{
   text-align: center;
