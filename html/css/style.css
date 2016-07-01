@@ -35,6 +35,9 @@ label{
 {
   max-height: 50px;
 }
+#logoAutoDinero{
+  max-height: none !important;
+}
 .marco_cotiza
 {
   position: fixed;

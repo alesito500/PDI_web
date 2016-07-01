@@ -41,12 +41,12 @@
           </div>
           <div class="col-xs-6">
             <a href="https://www.facebook.com/autodinero/">
-              <img src="images/facebook.png" alt="Facebook" class="img-responsive" id="ico-fb">
+              <img src="images/facebook.png" alt="Facebook" class="img-responsive" id="ico-fb" title="Facebook">
             </a>
             <a href="mailto:contacto@autodinero.com.mx?subject=Cotizaci&oacute;n">
-              <img src="images/correo.png" alt="Correo" class="img-responsive" id="ico-email">
+              <img src="images/correo.png" alt="Correo" class="img-responsive" id="ico-email" title="Correo">
             </a>
-            <img src="images/chat.png" alt="Chat" class="img-responsive" id="ico-chat">
+            <img src="images/chat.png" alt="Chat" class="img-responsive" id="ico-chat" title="Chat">
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
   <div class="container" id="Marco_informacion">
     <div class="row">
       <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-        <form action="contacto.php" method="post" autocomplete="on" target="_self" id="forma_cotiza_completa">
+        <form action="contacto.php" method="post" autocomplete="on" target="contacto" id="forma_cotiza_completa">
           <fieldset>
             <legend>
               Tus datos
@@ -87,13 +87,13 @@
               <input name="mail" type="email" class="form-control" id="text-correo-cotiza" placeholder="Correo electrónico" tabindex="2" autocomplete="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Ingresa tu correo electrónico como cuenta@dominio.extension">
             </div>
             <div class="form-group">
-              <input name="tel" type="tel" class="form-control" id="text-telefono-cotiza" placeholder="teléfono" tabindex="3" required="true" autocomplete="true" pattern="[0-9]+[-]?[0-9]*" maxlength="12" title="Ingresa tu número telefónico, sin espacio y sin letras">
+              <input name="tel" type="tel" class="form-control" id="text-telefono-cotiza" placeholder="teléfono" tabindex="3" required="true" autocomplete="true" maxlength="12" title="Ingresa tu número telefónico, sin espacio y sin letras">
             </div>
           </fieldset>
           <fieldset>
             <legend>Datos del vehículo</legend>
             <div class="form-group">
-              <input type="text" class="form-control" id="texto-datos-vehiculo-cotiza" tabindex="4" pattern=".+\/.+\/.*" placeholder="Marca/Modelo/Versión">
+              <input type="text" class="form-control" id="texto-datos-vehiculo-cotiza" tabindex="4" placeholder="Marca/Modelo/Versión">
             </div>
           </fieldset>
           <div class="form-group">
@@ -147,6 +147,9 @@
             Al enviar tu información autorizas a AutoDinero contactarte con fines informativos.
             los datos se almacenan de forma segura y serán utilizados bajo los términos de nuestro
             <a href="Aviso_privacidad.html">aviso de privacidad</a>.
+          </div>
+          <div class="form-group">
+            <iframe name="contacto" width="250px" height="50px" frameborder="0"></iframe>
           </div>
           <div class="form-group">
             <button type="submit" value="Cotizar" class="boton-ama" tabindex="7">Cotizar</button>
