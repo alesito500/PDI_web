@@ -14,7 +14,21 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <title>Sucursales</title>
+
+  <script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#nombre-suc li a').click(function(event){
+			var elem = $(this).next();
+			if(elem.is('ul')){
+				event.preventDefault();
+				$('#nombre-suc ul:visible').not(elem).slideUp();
+				elem.slideToggle();
+			}
+		});
+	});
+	</script>
+
+  <title>Sucursales - Puebla</title>
 </head>
 <body>
 
@@ -89,46 +103,26 @@
     <div class="row">
       <div class="col-sm-8">
         <blockquote>
-          <h1 class="titulos_index">Nuestras sucursales</h1>
+          <h1 class="titulos_index">Nuestras sucursales en Puebla</h1>
         </blockquote>
         <p>
-          <dl>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Ciudad de México – Azcapotzalco</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Ciudad de México – Coapa</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Ciudad de México – Gran sur</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Ciudad de México – Iztapalapa</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Ciudad de México – Monterrey</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Ciudad de México – Roma</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Ciudad de México – San Gerónimo</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Ciudad de México – Vallejo</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Ciudad de México – Zaragoza</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Estado de México – Almoloya</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Estado de México – Ecatepec</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Estado de México – Huehuetoca</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Estado de México – Izcalli</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Estado de México – Teoloyucan</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Estado de México – Tlalnepantla</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Estado de México – Atizapán</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Guanajuato – Acámbaro</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Guanajuato – Apaseo</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Guanajuato – Comonfort</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Guanajuato – Juventino</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Guanajuato – San Felipe</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Guanajuato – San Luis de la Paz</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Hidalgo – Apan</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Hidalgo – Cuautepec</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Hidalgo – Huichapan</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Hidalgo – Sahagun</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Hidalgo – Tepeapulco</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Hidalgo – Tizayuca</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Hidalgo – Tulancingo</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Hidalgo – Zimapan</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Morelos – Tepoztlán</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Morelos – Xochitepec</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Puebla – Tlatauquitepec</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Querétaro – Amealco</dt>
-            <dt class="dt-no-bold"><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>Querétaro – Pedro Escobedo</dt>
-          </dl>
+          <article>
+            <ul id="nombre-suc" class="ulfaq">
+              <li>
+                <a href="#">Tlatlauquitepec<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+                <ul>
+                  <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d788.9141937016245!2d-97.49680364578823!3d19.85139567103161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da944f59997491%3A0xd5598e5717405d64!2sAv+Reforma+64%2C+Centro%2C+73900+Tlatlauquitepec%2C+Pue.!5e0!3m2!1ses-419!2smx!4v1469215287974" width="80%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <br>
+                    Avenida Reforma 64-b colonia Centro, código postal 73900, en el Municipio de Tlatauquitepec, Puebla.
+                    <br>
+                    Teléfono 233-318-0689
+                    <!-- Contenido de la sucursal -->
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
         </p>
       </div>
     </div>

@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'Akzidenz-Grotesk BQ';
-	src: url('../fonts/akzidenzgrotesk-regular-webfont.woff2') format('woff2'),
-         url('../fonts/akzidenzgrotesk-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  src: url('../fonts/akzidenzgrotesk-regular-webfont.woff2') format('woff2'),
+       url('../fonts/akzidenzgrotesk-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face{
   font-family: 'Exo Bold';
     src: url('../fonts/exo-bold-webfont.woff2') format('woff2'),
          url('../fonts/exo-bold-webfont.woff') format('woff');
@@ -92,4 +94,32 @@ ul.Menu-Flecha li.active:before{
 ul.Menu-Flecha li.active:hover:before{
   border-color: transparent transparent transparent #fff;
   border-style: solid;
+}
+
+ul.Menu-dropdown-Flecha {
+	margin: 0px;
+}
+
+ul.Menu-dropdown-Flecha li {
+	line-height: 5px;
+	text-indent: 1px;
+  display: list-item;
+}
+
+ul.Menu-dropdown-Flecha li a {
+	color: #264387;
+	font-size: 1.2em;
+	font-weight: 600;
+	display: -moz-box;
+	background: #fff;
+  width: 100%
+}
+
+.Menu-dropdown-Flecha li:before, .Menu-dropdown-Flecha li:before, .Menu-dropdown-Flecha li a:after, .Menu-dropdown-Flecha li a:hover:after {
+    visibility: hidden;
+}
+
+ul.Menu-dropdown-Flecha li a:hover {
+    background: #ea5b0c;
+    color: #fff;
 }
