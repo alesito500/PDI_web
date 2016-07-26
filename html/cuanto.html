@@ -1,4 +1,4 @@
-.html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -89,25 +89,25 @@
   <div class="container" id="Marco_informacion">
     <div class="row">
       <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-        <form action="contacto.php" method="post" autocomplete="on" target="contacto" id="forma_cotiza_completa">
+        <form action="contacto.php" method="POST" autocomplete="on" target="#contacto" id="forma_cotiza_completa">
           <fieldset>
             <legend>
               Tus datos
             </legend>
             <div class="form-group">
-              <input name="nombre" id="text-nombre-cotiza" type="text" class="form-control" placeholder="Nombre completo" autofocus tabindex="1" autocomplete="on" required="true">
+              <input name="nombre-cotizador" id="nombre-cotizador" type="text" class="form-control" placeholder="Nombre completo" autofocus tabindex="1" autocomplete="on" required="true">
             </div>
             <div class="form-group">
-              <input name="mail" type="email" class="form-control" id="text-correo-cotiza" placeholder="Correo electrónico" tabindex="2" autocomplete="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Ingresa tu correo electrónico como cuenta@dominio.extension">
+              <input name="mail-cotizador" type="email" class="form-control" id="mail-cotizador" placeholder="Correo electrónico" tabindex="2" autocomplete="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Ingresa tu correo electrónico como cuenta@dominio.extension">
             </div>
             <div class="form-group">
-              <input name="tel" type="tel" class="form-control" id="text-telefono-cotiza" placeholder="teléfono" tabindex="3" required="true" autocomplete="true" maxlength="12" title="Ingresa tu número telefónico, sin espacio y sin letras">
+              <input name="tel-cotizador" type="tel" class="form-control" id="tel-cotizador" placeholder="teléfono" tabindex="3" required="true" autocomplete="true" maxlength="12" title="Ingresa tu número telefónico, sin espacio y sin letras">
             </div>
           </fieldset>
           <fieldset>
             <legend>Datos del vehículo</legend>
             <div class="form-group">
-              <input type="text" class="form-control" id="texto-datos-vehiculo-cotiza" tabindex="4" placeholder="Marca/Modelo/Versión">
+              <input type="text" class="form-control" id="auto-cotizador" name="auto-cotizador" tabindex="4" placeholder="Marca/Modelo/Versión">
             </div>
           </fieldset>
           <div class="form-group">
@@ -163,7 +163,7 @@
             <a href="Aviso_privacidad.html">aviso de privacidad</a>.
           </div>
           <div class="form-group">
-            <iframe name="contacto" width="250px" height="50px" frameborder="0"></iframe>
+            <iframe name="contacto" id="contacto" width="250px" height="50px" frameborder="0"></iframe>
           </div>
           <div class="form-group">
             <button type="submit" value="Cotizar" class="boton-ama" tabindex="7">Cotizar</button>
