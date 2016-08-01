@@ -206,6 +206,9 @@ label{
   width:auto;
   list-style:none;
 }
+.ulfaq ul{
+  list-style: none;
+}
 .dropdownlist{
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
@@ -279,4 +282,9 @@ footer{
 }
 .dl-list dt{
   list-style-type: circle;
+}
+.mapa {
+	width: 99%;
+	height: 480px;
+	border: 0;
 }

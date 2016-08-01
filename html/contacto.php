@@ -61,9 +61,7 @@
           <li ><a href="queobtengo.html" >Beneficios</a></li>
           <li class="active" ><a href="#Marco_informacion" >Cotiza</a></li>
           <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Sucursales<span class="caret"></span>
-              </a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sucursales<span class="caret"></span></a>
             <ul class="dropdown-menu Menu-dropdown-Flecha">
               <li><a href="suc_cdmx.html">Ciudad de México</a></li>
               <li><a href="suc_edomex.html">Estado de México</a></li>
