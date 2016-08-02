@@ -87,29 +87,31 @@
   <div class="container" id="Marco_informacion">
     <div class="row">
       <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+        <blockquote>
         <?php
-    			$nombre=$_POST['nombre-cotizador'];
-    			$mail=$_POST['mail-cotizador'];
-    			$tel=$_POST['tel-cotizador'];
-    			$auto=$_POST['auto-cotizador'];
-    			$listasucursales=$_POST['listasucursales'];
-    			$mensaje_forma=$_POST['textareamensaje'];
+    			$nombre=$_POST["nombre-cotizador"];
+    			$mail=$_POST["mail-cotizador"];
+    			$tel=$_POST["tel-cotizador"];
+    			$auto=$_POST["auto-cotizador"];
+    			$listasucursales=$_POST["listasucursales"];
+    			$mensaje_forma=$_POST["textareamensaje"];
 
-    			$mensaje= "Nombre: $nombre \n Telefono: $tel \nSucursal: $listasucursales \ncorreo de contacto $mail \n $mensaje_forma \n";
+    			$mensaje= "Nombre: ".$nombre." \r\n Telefono: ".$tel." \r\nSucursal: ".$listasucursales." \r\ncorreo de contacto ".$mail." \r\n ".$mensaje_forma." \r\n";
     			$titulo="Cotizacion de la pagina de internet";
 
-    			$contacto="alesito500@gmail.com";
+    			$contacto="contacto@autodinero.com.mx";
     			$cabeceras = "From: Sitio de Autodinero" . "\r\n" .
     		    "Reply-To: $mail" . "\r\n";
     			if(mail($contacto, $titulo, $mensaje, $cabeceras)){
     					echo "Se envio el correo. Gracias \n";
-    					echo "Variables: \n Contacto = $contacto \n Titulo: $titulo \n Mensaje: $mensaje";
+
     			}else{
-    				echo "El correo no se envió";
-    				echo "Variables: \n Contacto = $contacto \n Titulo: $titulo \n Mensaje: $mensaje";
+    				echo "El correo no se envió, puede intentarlo mediante esta liga <a href='mailto:contacto@autodinero.com.mx'>contacto</a>";
+
     			}
 
     		?>
+        </blockquote>
       </div>
     </div>
   </div>
