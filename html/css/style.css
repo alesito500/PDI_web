@@ -116,6 +116,7 @@ label{
 }
 .pie-rojo a{
   color:rgb(227, 0, 62);
+  cursor: pointer;
 }
 .pie-rojo a:hover{
   color: #e72c49;
@@ -207,7 +208,7 @@ label{
   list-style:none;
 }
 .ulfaq ul{
-  list-style: none;, 
+  list-style: none;,
 }
 .dropdownlist{
   -moz-border-radius:5px;
