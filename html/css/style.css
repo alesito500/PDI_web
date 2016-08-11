@@ -14,12 +14,13 @@
 }
 h1, h2, h3, h4, h5, h6{
   font-family: 'Exo Bold', sans-serif;
+  color: #264387;
 }
 body{
   font-family: 'Akzidenz-Grotesk BQ', serif;
 }
 legend{
-  color: rgb(32, 59, 250);
+  color: #264387;
 }
 article{
   text-align: justify;
@@ -132,6 +133,14 @@ label{
   border-radius: 12px;
   padding: 4px;
   min-height: 186px;
+}
+.fondo_blanco a
+{
+  color: rgb(15, 26, 54);
+}
+.fondo_blanco a:visited
+{
+  color: #264387;  
 }
 .fondo_azul{
   background-color: #264387;
