@@ -140,7 +140,7 @@ label{
 }
 .fondo_blanco a:visited
 {
-  color: #264387;  
+  color: #264387;
 }
 .fondo_azul{
   background-color: #264387;
@@ -273,6 +273,9 @@ label{
 .opciones_faq img{
   padding-left: 30%;
   max-height: 73px;
+}
+.opciones_faq h3{
+  color: #e3003e;
 }
 .boton-ama{
   font-family: 'Akzidenz-Grotesk BQ', serif;

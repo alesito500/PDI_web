@@ -27,6 +27,28 @@
 		});
 	});
 	</script>
+  <!--Start of Zopim Live Chat Script-->
+  <script type="text/javascript">
+    window.$zopim||(function(d,s){
+      var z=$zopim=function(c){
+        z._.push(c)
+      },
+      $=z.s=d.createElement(s),
+      e=d.getElementsByTagName(s)[0];
+      z.set=function(o){
+        z.set._.push(o)
+      };
+      z._=[];
+      z.set._=[];
+      $.async=!0;
+      $.setAttribute("charset","utf-8");
+      $.src="//v2.zopim.com/?3oyUKkXWp4IeQSoqiWvJYXBLe6jhFHYr";
+      z.t=+new Date;
+      $.type="text/javascript";
+      e.parentNode.insertBefore($,e)
+    })(document,"script");
+  </script>
+  <!--End of Zopim Live Chat Script-->
   <title>Preguntas frecuentes</title>
 </head>
 <body>
@@ -327,7 +349,7 @@
     <br>
     <div class="row">
       <div class="col-xs-8 text-center">
-        <h2 style="font-family:Exo-Bold;">¿Tienes más dudas?</h2>
+        <h2 style="font-family:inherit;">¿Tienes más dudas?</h2>
       </div>
     </div>
     <div class="row">
@@ -342,7 +364,7 @@
         <div class="col-sm-4">
           <div class="opciones_faq">
             <h3>Chatea en vivo</h3>
-            <a href="#">
+            <a href="#" onclick="">
               <img src="images/chat.png" class="img-responsive" alt="Chatea con nosotros">
             </a>
           </div>
@@ -407,7 +429,7 @@
           </h3>
           <ul>
             <li>(55) 6845-0000</li>
-            <li><a href="">Chatea con nosotros</a></li>
+            <li><a href="#fondo">Chatea con nosotros</a></li>
             <li><a href="mailto:contacto@autodinero.com.mx">Envía un correo</a></li>
             <li><a href="cuanto.html">Solicita que te llamen</a></li>
           </ul>
@@ -416,7 +438,7 @@
       </div>
     </div>
     <div class="row">
-      <footer>
+      <footer id="fondo">
         Derechos reservados 2016
       </footer>
     </div>
