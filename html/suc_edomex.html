@@ -27,15 +27,77 @@
 		});
 	});
 	</script>
+  <!--Start of Zopim Live Chat Script-->
+  <script type="text/javascript">
+    window.$zopim||(function(d,s){
+      var z=$zopim=function(c){
+        z._.push(c)
+      },
+      $=z.s=d.createElement(s),
+      e=d.getElementsByTagName(s)[0];
+      z.set=function(o){
+        z.set._.push(o)
+      };
+      z._=[];
+      z.set._=[];
+      $.async=!0;
+      $.setAttribute("charset","utf-8");
+      $.src="//v2.zopim.com/?3oyUKkXWp4IeQSoqiWvJYXBLe6jhFHYr";
+      z.t=+new Date;
+      $.type="text/javascript";
+      e.parentNode.insertBefore($,e)
+    })(document,"script");
+  </script>
+  <!--End of Zopim Live Chat Script-->
 
   <title>Sucursales - Estado de México</title>
 </head>
 <body>
 
   <div class="container">
+    <div class="visible-xs">
+        <br>
+        <header>
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile" >
+                  <span class="sr-only">Menu</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">AutoDinero</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                  <li ><a href="index.html">Inicio</a></li>
+                  <li ><a href="requisitos.html" >Requisitos</a></li>
+                  <li ><a href="beneficios.html" >Beneficios</a></li>
+                  <li ><a href="cotiza.html" >Cotiza</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sucursales<span class="caret"></span></a>
+                    <ul class="dropdown-menu Menu-dropdown-Flecha">
+                      <li><a href="suc_cdmx.html">Ciudad de México</a></li>
+                      <li><a href="suc_edomex.html">Estado de México</a></li>
+                      <li><a href="suc_gto.html">Guanajuato</a></li>
+                      <li><a href="suc_hgo.html">Hidalgo</a></li>
+                      <li><a href="suc_mor.html">Morelos</a></li>
+                      <li><a href="suc_pbla.html">Puebla</a></li>
+                      <li><a href="suc_qtro.html">Querétaro</a></li>
+                    </ul>
+                  </li>
+                  <li ><a href="faq.html" >Preguntas frecuentes</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="espacio_blanco" ></div>
+      </div>
     <!-- Banner superior -->
     <div class="row" id="banner-superior" >
-      <div class="col-xs-8 col-sm-3 col-md-3 col-md-offset-1">
+      <div class="col-xs-8 col-sm-3 col-md-offset-1">
         <a href="/"><img src="images/AutoDinero-gde.png" class="img-responsive" alt="Autodinero" id="logoAutoDinero"></a>
       </div>
       <div class="col-xs-12 col-sm-8 col-sm-offset-1 col-md-7 col-md-offset-1">
@@ -54,7 +116,7 @@
             </div>
           </div>
           <div class="col-xs-6">
-            <a href="https://www.facebook.com/autodinero/">
+            <a href="https://www.facebook.com/autodinero/" target="_blank">
               <img src="images/facebook.png" alt="Facebook" class="img-responsive" id="ico-fb" title="Facebook">
             </a>
             <a href="mailto:contacto@autodinero.com.mx?subject=Cotizaci&oacute;n">
@@ -67,13 +129,13 @@
     </div>
 
     <!-- Men&uacute; de navegaci&oacute;n -->
-    <div class="row" id="menu-navegacion">
+    <div class="row hidden-xs" id="menu-navegacion">
       <div class="col-sm-12">
         <ul class="Menu-Flecha">
           <li><a href="index.html">Inicio</a></li>
-          <li ><a href="general.html" >Requisitos</a></li>
-          <li ><a href="queobtengo.html" >Beneficios</a></li>
-          <li ><a href="cuanto.html" >Cotiza</a></li>
+          <li ><a href="requisitos.html" >Requisitos</a></li>
+          <li ><a href="beneficios.html" >Beneficios</a></li>
+          <li ><a href="cotiza.html" >Cotiza</a></li>
           <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sucursales<span class="caret"></span></a>
             <ul class="dropdown-menu Menu-dropdown-Flecha">
@@ -116,7 +178,17 @@
                   <li>
                     Miguel Hidalgo y Costilla número 1-C colonia Centro Almoloya, código postal 50900, en el Municipio de Almoloya de Juárez, Estado de México.
                     <br>
-                    Teléfono 725-136-3441
+                    <dl>
+                      <dt>Teléfono 725-136-3441</dt>
+                      <dt>Horarios</dt>
+                      <dd>
+                        <b>
+                          Lunes a viernes de 9:00 a.m. a 6 p.m. <br>
+                          Sábados de 10:00 a.m. a 3 p.m. <br>
+                          Domingos de 10:00 a.m. a 2 p.m.
+                        </b>
+                      </dd>
+                    </dl>
                     <!-- Contenido de la sucursal -->
                   </li>
                 </ul>
@@ -127,7 +199,17 @@
                   <li>
                     Adolfo López Mateos número 17 colonia Jardines de Atizapán, código postal 52978, en el Municipio de Atizapán de Zaragoza, Estado de México.
                     <br>
-                    Teléfono ---
+                    <dl>
+                      <dt>Teléfono ---</dt>
+                      <dt>Horarios</dt>
+                      <dd>
+                        <b>
+                          Lunes a viernes de 9:00 a.m. a 6 p.m. <br>
+                          Sábados de 10:00 a.m. a 3 p.m. <br>
+                          Domingos de 10:00 a.m. a 2 p.m.
+                        </b>
+                      </dd>
+                    </dl>
                     <!-- Contenido de la sucursal -->
                   </li>
                 </ul>
@@ -138,7 +220,17 @@
                   <li>
                     Morelos número 50 colonia San Cristobal Centro, código postal 55000, en el Municipio de San Cristobal Ecatepec, Estado de México.
                     <br>
-                    Teléfono 5551160091
+                    <dl>
+                      <dt>Teléfono 5551160091</dt>
+                      <dt>Horarios</dt>
+                      <dd>
+                        <b>
+                          Lunes a viernes de 9:00 a.m. a 6 p.m. <br>
+                          Sábados de 10:00 a.m. a 3 p.m. <br>
+                          Domingos de 10:00 a.m. a 2 p.m.
+                        </b>
+                      </dd>
+                    </dl>
                     <!-- Contenido de la sucursal -->
                   </li>
                 </ul>
@@ -149,7 +241,17 @@
                   <li>
                     Benito Juárez sin número local 2A colonia Centro, código postal 54680, en el Municipio de Huehuetoca, Estado de México.
                     <br>
-                    Teléfono 593-918-1018
+                    <dl>
+                      <dt>Teléfono 593-918-1018</dt>
+                      <dt>Horarios</dt>
+                      <dd>
+                        <b>
+                          Lunes a viernes de 9:00 a.m. a 6 p.m. <br>
+                          Sábados de 10:00 a.m. a 3 p.m. <br>
+                          Domingos de 10:00 a.m. a 2 p.m.
+                        </b>
+                      </dd>
+                    </dl>
                     <!-- Contenido de la sucursal -->
                   </li>
                 </ul>
@@ -160,7 +262,17 @@
                   <li>
                     Ejército Mexicano número 2 local 5 colonia Arcos del Alba, código postal 45750, en el Municipio de Cuautitlán Izcalli, Estado de México.
                     <br>
-                    Teléfono ---
+                    <dl>
+                      <dt>Teléfono ---</dt>
+                      <dt>Horarios</dt>
+                      <dd>
+                        <b>
+                          Lunes a viernes de 9:00 a.m. a 6 p.m. <br>
+                          Sábados de 10:00 a.m. a 3 p.m. <br>
+                          Domingos de 10:00 a.m. a 2 p.m.
+                        </b>
+                      </dd>
+                    </dl>
                     <!-- Contenido de la sucursal -->
                   </li>
                 </ul>
@@ -171,7 +283,17 @@
                   <li>
                     Hidalgo número 13 colonia Barrio Tlatilco, código postal 54770, en el Municipio de Teoloyucan, Estado de México.
                     <br>
-                    Teléfono 593-914-1356
+                    <dl>
+                      <dt>Teléfono 593-914-1356</dt>
+                      <dt>Horarios</dt>
+                      <dd>
+                        <b>
+                          Lunes a viernes de 9:00 a.m. a 6 p.m. <br>
+                          Sábados de 10:00 a.m. a 3 p.m. <br>
+                          Domingos de 10:00 a.m. a 2 p.m.
+                        </b>
+                      </dd>
+                    </dl>
                     <!-- Contenido de la sucursal -->
                   </li>
                 </ul>
@@ -182,7 +304,17 @@
                   <li>
                     Plaza Virreinal número 12-B colonia Barrio de San Martín, código postal 54614, en el Municipio de Tepotzotlán, Estado de México.
                     <br>
-                    Teléfono 555-876-7565
+                    <dl>
+                      <dt>Teléfono 555-876-7565</dt>
+                      <dt>Horarios</dt>
+                      <dd>
+                        <b>
+                          Lunes a viernes de 9:00 a.m. a 6 p.m. <br>
+                          Sábados de 10:00 a.m. a 3 p.m. <br>
+                          Domingos de 10:00 a.m. a 2 p.m.
+                        </b>
+                      </dd>
+                    </dl>
                     <!-- Contenido de la sucursal -->
                   </li>
                 </ul>
@@ -193,7 +325,17 @@
                   <li>
                     1 eje satélite número 54 local 4A colonia Hab. Viveros de Satélite, código postal 54060, en el Municipio de Tlalnepantla, Estado de México.
                     <br>
-                    Teléfono 557-093-5052
+                    <dl>
+                      <dt>Teléfono 557-093-5052</dt>
+                      <dt>Horarios</dt>
+                      <dd>
+                        <b>
+                          Lunes a viernes de 9:00 a.m. a 6 p.m. <br>
+                          Sábados de 10:00 a.m. a 3 p.m. <br>
+                          Domingos de 10:00 a.m. a 2 p.m.
+                        </b>
+                      </dd>
+                    </dl>
                     <!-- Contenido de la sucursal -->
                   </li>
                 </ul>
@@ -210,9 +352,9 @@
       <div class="fondo_blanco">
         <h3>Obtener préstamo</h3>
         <ul>
-          <li><a href="cuanto.html">Cotiza</a></li>
-          <li><a href="general.html">Requisitos</a></li>
-          <li><a href="queobtengo.html">Beneficios</a></li>
+          <li><a href="cotiza.html">Cotiza</a></li>
+          <li><a href="requisitos.html">Requisitos</a></li>
+          <li><a href="beneficios.html">Beneficios</a></li>
           <li><a href="faq.html">Preguntas frecuentes</a></li>
         </ul>
       </div>
@@ -251,9 +393,9 @@
           <li>(55) 6845-0000</li>
           <li><a href="">Chatea con nosotros</a></li>
           <li><a href="mailto:contacto@autodinero.com.mx">Envía un correo</a></li>
-          <li><a href="cuanto.html">Solicita que te llamen</a></li>
+          <li><a href="cotiza.html">Solicita que te llamen</a></li>
         </ul>
-        <a href="https://www.facebook.com/autodinero/"><img src="images/facebook.png" alt="Síguenos en facebook" class="img-responsive"></a>
+        <a href="https://www.facebook.com/autodinero/" target="_blank"><img src="images/facebook.png" alt="Síguenos en facebook" class="img-responsive"></a>
       </div>
     </div>
   </div>
@@ -265,7 +407,7 @@
   <!-- Pie de p&aacute;gina azul -->
   <!-- Container-fluid principal -->
   <!-- Marco para cotizar -->
-  <div class="marco_cotiza" id="forma_cotizador">
+  <div class="marco_cotiza hidden-xs" id="forma_cotizador">
     <form id="cotizador" method="post" action="contacto.php">
       <div class="row">
         <div class="col-sm-12">
