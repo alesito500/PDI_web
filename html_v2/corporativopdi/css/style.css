@@ -12,6 +12,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/*  Sección del DOCK para compartir */
+@media screen and (max-width: 980px) {
+    .a2a_floating_style.a2a_vertical_style { display: none; }
+}
+/*  Sección del DOCK para compartir */
+
+
 h1, h2, h3, h4, h5, h6{
   font-family: 'Exo Bold', sans-serif;
   color: #264387;
@@ -86,7 +94,7 @@ label{
   background-color: #e3003e;
   color: white;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .fondo_rojo p{
   margin: 0;

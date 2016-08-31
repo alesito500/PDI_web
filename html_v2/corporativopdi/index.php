@@ -1,21 +1,21 @@
 <?php require_once('Connections/dpi.php');?>
-<?php 
+<?php
 	mysqli_select_db($dpi, $database_dpi);
-	$query_meta = "SELECT * 
+	$query_meta = "SELECT *
 	FROM tags";
 	$meta = mysqli_query($dpi,$query_meta) or die(mysql_error());
 	$row_meta = mysqli_fetch_assoc($meta);
 	$totalRows_meta = mysqli_num_rows($meta);
-	
+
 	mysqli_select_db($dpi, $database_dpi);
-	$query_list = "SELECT * 
+	$query_list = "SELECT *
 	FROM estado";
 	$list = mysqli_query($dpi,$query_list) or die(mysql_error());
 	$row_list = mysqli_fetch_assoc($list);
 	$totalRows_list = mysqli_num_rows($list);
-	
+
 	mysqli_select_db($dpi, $database_dpi);
-	$query_list2 = "SELECT * 
+	$query_list2 = "SELECT *
 	FROM estado";
 	$list2 = mysqli_query($dpi,$query_list2) or die(mysql_error());
 	$row_list2 = mysqli_fetch_assoc($list2);
@@ -61,13 +61,13 @@
       e.parentNode.insertBefore($,e)
     })(document,"script");
   </script>
-  
+
 <script>
- 
+
   $zopim(function() {
     $zopim.livechat.window.show();
   });
- 
+
 </script>
   <!--End of Zopim Live Chat Script-->
 
@@ -104,9 +104,9 @@
 							$id_estado=$row_list['id_estado'];
 							$nmbre_estado=$row_list['nmbre_estado'];
 							echo "<li><a href=\"sucursales_detalle.php?estado=$id_estado\">$nmbre_estado</a></li>";
-							
-							} while ($row_list = mysqli_fetch_assoc($list));										
-						?> 
+
+							} while ($row_list = mysqli_fetch_assoc($list));
+						?>
                   </ul>
                 </li>
                 <li ><a href="faq.php" >Preguntas frecuentes</a></li>
@@ -143,7 +143,7 @@
               <a href="mailto:contacto@autodinero.com.mx?subject=Cotizaci&oacute;n">
                 <img src="images/correo.png" alt="Correo" class="img-responsive" id="ico-email" title="Correo">
               </a>
-              <a href="javascript:void($zopim.livechat.window.show())"><img src="images/chat.png" alt="Chat" class="img-responsive" id="ico-chat" title="Chat"></a>        
+              <a href="javascript:void($zopim.livechat.window.show())"><img src="images/chat.png" alt="Chat" class="img-responsive" id="ico-chat" title="Chat"></a>
             </div>
           </div>
         </div>
@@ -165,9 +165,9 @@
 							$id_estado2=$row_list2['id_estado'];
 							$nmbre_estado2=$row_list2['nmbre_estado'];
 							echo "<li><a href=\"sucursales_detalle.php?estado=$id_estado2\">$nmbre_estado2</a></li>";
-							
-							} while ($row_list2 = mysqli_fetch_assoc($list2));										
-						?>  
+
+							} while ($row_list2 = mysqli_fetch_assoc($list2));
+						?>
               </ul>
             </li>
             <li ><a href="faq.php" >Preguntas frecuentes</a></li>
@@ -178,45 +178,67 @@
     </div>
 
   <!-- Men&uacute; de navegaci&oacute;n -->
-  <!-- Banner principal -->
-  <div id="auto-slider">
-        <div class="slider-inner">
-          <ul>
-            <li>
-              <div class="renglon_imagen">
-                <img src="images/INDEX.jpg" alt="Bienvenido a Autodinero" class="img-responsive">
-              </div>
-              <div class="fondo_rojo">
-                <div class="text-center">
-                  <p>Dinero inmediato sin dejar tu auto</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="renglon_imagen">
-                <img src="images/REQUISITOS.jpg" alt="Bienvenido a Autodinero" class="img-responsive">
-              </div>
-              <div class="fondo_rojo">
-                <div class="text-center">
-                  <p>En una hora autorizamos tu crédito y en 24 horas obtienes tu dinero</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="renglon_imagen">
-                <img src="images/INDEX-3.jpg" alt="Bienvenido a Autodinero" class="img-responsive">
-              </div>
-              <div class="fondo_rojo">
-                <div class="text-center">
-                  <p>Hacemos cotizaciones a domicilio</p>
-                </div>
-              </div>
 
-            </li>
-          </ul>
-            <div class="fs-icon" title="Expand/Close"></div>
+	<!-- Banner principal -->
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicadores -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="renglon_imagen">
+          <img src="images/INDEX.jpg" alt="Bienvenido a Autodinero" class="img-responsive">
         </div>
+        <div class="fondo_rojo">
+          <div class="text-center">
+            <p>Dinero inmediato sin dejar tu auto</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="renglon_imagen">
+          <img src="images/REQUISITOS.jpg" alt="Bienvenido a Autodinero" class="img-responsive">
+        </div>
+        <div class="fondo_rojo">
+          <div class="text-center">
+            <p>En una hora autorizamos tu crédito y en 24 horas obtienes tu dinero</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="renglon_imagen">
+          <img src="images/INDEX-3.jpg" alt="Bienvenido a Autodinero" class="img-responsive">
+        </div>
+        <div class="fondo_rojo">
+          <div class="text-center">
+            <p>Hacemos cotizaciones a domicilio</p>
+          </div>
+        </div>
+      </div>
     </div>
+</div>
+
+<!-- Banner principal -->
+
+		<!-- DOCK para los botones de share -->
+		    <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
+		    <a class="a2a_button_facebook"></a>
+		    <a class="a2a_button_twitter"></a>
+		    <a class="a2a_button_google_plus"></a>
+		    <a class="a2a_button_email"></a>
+		    <a class="a2a_button_whatsapp"></a>
+		    <a class="a2a_button_sms"></a>
+		    </div>
+		<!-- DOCK para los botones de share -->
+
   <!-- Banner principal -->
   <div class="container" id="Bienvenido">
     <div class="row">
@@ -407,5 +429,9 @@
     document.getElementById("nombre-cotizador").focus();
   }
   </script>
+	<!-- DOCK para los botones de share -->
+	  <script async src="https://static.addtoany.com/menu/page.js"></script>
+	<!-- DOCK para los botones de share -->
+
 </body>
 </html>
